@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrot Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section class="control">
+      <button id="start-btn">▶</button>
+      <div class="timer map">
+        <label for="gameTimer">남은시간</label>
+        <span id="gameTimer">10</span>
+      </div>
+      <div class="counter">
+        <label for="countCarrot">남은 당근 갯수</label>
+        <span id="countCarrot">10</span>
+      </div>
+    </section>
+    <section id="field" class="hidden">
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/bug.png" class="bug" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+      <img src="img/carrot.png" class="carrot" />
+    </section>
+    <div class="hidden" id="popup">
+      <div class="popup-box">
+        <span class="notice">게임을 다시 시작하시겠습니까?</span>
+        <span class="result"></span>
+        <button class="retry-btn">Retry</button>
+      </div>
+    </div>
+  </body>
+</html>
